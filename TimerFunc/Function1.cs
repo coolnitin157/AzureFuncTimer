@@ -11,6 +11,7 @@ namespace TimerFunc
         [FunctionName("TimerFunc")]
         public static void Run([TimerTrigger(Timer, RunOnStartup = true)]TimerInfo myTimer, ILogger log)
         {
+            //added sonar qube for testing
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }
     }
